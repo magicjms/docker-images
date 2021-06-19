@@ -13,5 +13,6 @@ RUN set -x \
     && mkdir -p /home/data/app
 
 COPY . /home/data/app/
-RUN cd /home/data/app && pwd && ls -alh && tar -xvf setuptools-57.0.0.tar.gz && cd setuptools-57.0.0 && python3 setup.py install
-RUN cd /home/data/app && pwd && ls -alh && tar -xvf pip81-0.0.2.tar.gz && cd pip81-0.0.2 && python3 setup.py install && which pip3
+RUN date -R
+RUN cd /home/data/app && pwd && ls -alh && tar -xf setuptools-57.0.0.tar.gz && cd setuptools-57.0.0 && ls -alh && python3 setup.py install
+RUN cd /home/data/app && pwd && ls -alh && tar -xf pip81-0.0.2.tar.gz && cd pip81-0.0.2 && ls -alh && python3 setup.py install && which pip3
