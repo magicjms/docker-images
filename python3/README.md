@@ -1,8 +1,11 @@
-### python3 mysql
+# python3安装mysql模块
 
-python3 -m pip install PyMySQL
+
 
 ```
+python3 -m pip install PyMySQL
+
+
 import pymysql.cursors
 
 # Connect to the database
