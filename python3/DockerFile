@@ -6,7 +6,7 @@ RUN set -x \
     && apk add build-base zlib-dev gcc
 
 RUN wget https://www.python.org/ftp/python/3.9.5/Python-3.9.5.tgz && tar -xf Python-3.9.5.tgz && cd Python-3.9.5 && ls -alh
-RUN cd Python-3.9.5 && ls -alh && ./configure --enable-optimizations --with-ensurepip=install && make -j 8 && sudo make altinstall
+RUN cd Python-3.9.5 && ls -alh && ./configure --enable-optimizations --with-ensurepip=install && make -j 8 && make altinstall
 RUN python3 -V
 
 # RUN set -x \
