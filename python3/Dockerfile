@@ -6,7 +6,7 @@ RUN python3 -V
 RUN python -V
 RUN which pip3
 RUN pip3 list
-RUN pip3 install MySQLdb
+RUN pip3 install mysqlclient
 RUN pip3 install openpyxl
 RUN pip3 install requests
 RUN pip3 list
