@@ -1,0 +1,7 @@
+Django=3.1.1
+django-cors-headers=3.5.0
+djangorestframework=3.12.2
+python-gitlab=2.6.0
+python-jenkins=1.7.0
+requests=2.25.0
+openpyxl=3.0.7
